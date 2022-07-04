@@ -46,9 +46,17 @@ $color-main: #0075ff;
 
 .main-menu {
   li {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     list-style: none;
     display: inline;
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -58,4 +66,52 @@ $color-main: #0075ff;
   border-radius: 50%;
   box-shadow: 0 0 10px #0000005e;
   color: $color-main;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  .icon {
+    color: $color-main;
+    font-size: 10rem;
+    text-align: center;
+  }
+
+  .description {
+    .title {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .text {
+      color: #333;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  .cta {
+    margin-top: 3rem;
+    color: $color-main;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    color: $color-main;
+    font-size: 10rem;
+    padding: 0;
+    text-align: center;
+  }
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: -2rem;
+    text-align: center;
+  }
 }
